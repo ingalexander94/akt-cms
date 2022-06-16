@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import pageList from './pages.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+    <header />
+        <nav>
+            <img src='https://www.aktmotos.com/sites/default/files/logo-akt-enero-2021.png' alt='logo' />
+            <ul>
+                {
+                    pageList.map(({name}) =>  <li>{name} <i class='fa fa-caret-down'></i></li>)
+                }
+            </ul>
+        </nav>
+ </>
   );
 }
 
