@@ -1,5 +1,5 @@
 ---
 layout: blog
-title: Motos
+name: Motos
 ---
 Paginas principal
